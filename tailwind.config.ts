@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: ["class"],
+  darkMode: "class", 
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -39,8 +39,8 @@ const config: Config = {
         full: "9999px",
       },
       spacing: {
-        "section": "4rem", // Standard section spacing
-        "container": "2rem",
+        section: "4rem", // Standard section spacing
+        container: "2rem",
       },
       boxShadow: {
         default: "0 4px 6px rgba(0, 0, 0, 0.1)",
@@ -63,7 +63,6 @@ const config: Config = {
       },
     },
   },
-  
 };
 
 export default config;
