@@ -3,10 +3,10 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   darkMode: "class", 
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     container: {
@@ -39,7 +39,7 @@ const config: Config = {
         full: "9999px",
       },
       spacing: {
-        section: "4rem", // Standard section spacing
+        section: "4rem",
         container: "2rem",
       },
       boxShadow: {
@@ -63,6 +63,7 @@ const config: Config = {
       },
     },
   },
+  plugins: [], // Ensure plugins are added here if needed
 };
 
 export default config;
