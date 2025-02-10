@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
-
+@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-
-body {
   font-family: "Syne", sans-serif;
 }
 
