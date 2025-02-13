@@ -63,7 +63,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [], // Ensure plugins are added here if needed
+  plugins: [], 
 };
 
 export default config;
