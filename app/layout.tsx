@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "./provider";
+import { ThemeProvider } from "./provider"; 
 
 export const metadata: Metadata = {
   title: "Vow Divas | Enthuse the Beauty Within",
@@ -20,15 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="white"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+      <body className="">
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
