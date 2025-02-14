@@ -22,10 +22,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full px-5 md:px-10 py-3 flex items-center justify-between border-b border-dotted border-b-amber-400 z-50 transition-all ${
-        resolvedTheme === "dark" ? "bg-black text-white" : "bg-white text-black"
-      }`}
-    >
+    className={`fixed top-0 left-0 w-full px-5 md:px-10 py-2 flex items-center justify-between z-[10] bg-transparent bg-blur-lg transition-all`}>
       {/* Logo */}
       <Link href="/" className="flex items-center">
         <Image
@@ -35,7 +32,7 @@ const Navbar = () => {
           height={40}
           className="object-contain px-2"
         />
-        <h2 className="text-3xl md:text-3xl font-normal tracking-wide px-2">
+        <h2 className="text-3xl md:text-3xl text-black dark:text-white font-normal tracking-wide px-2">
           Vow Divas
         </h2>
       </Link>
