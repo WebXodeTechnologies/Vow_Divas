@@ -11,22 +11,24 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: "1.5rem",
+      padding: "2rem",
       screens: {
-        "2xl": "1280px",
+        "2xl": "1400px",
       },
     },
     extend: {
       colors: {
-        black: "#000",
-        white: "#FFF",
-        primary: "#D4AF37", // Gold for a premium feel
-        secondary: "#A17A4D", // Elegant brown-gold
-        accent: "#F8E1B4", // Soft golden tone
-        muted: "#E5E5E5",
-        background: "#FCFCFC",
-        foreground: "#333",
-        border: "#D3D3D3",
+        black: {
+          DEFAULT: "#000",
+          100: "#000319",
+          200: "rgba(17, 25, 40, 0.75)",
+          300: "rgba(255, 255, 255, 0.125)",
+        },
+        white: {
+          DEFAULT: "#FFF",
+          100: "#BEC1DD",
+          200: "#C1C2D3",
+        },
       },
       fontFamily: {
         syne: ["Syne", "sans-serif"],
