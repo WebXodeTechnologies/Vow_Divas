@@ -1,11 +1,12 @@
-import Navbar from '@/components/Navbar'
 import React from 'react'
+import Banner from '@/components/Homepage/Banner'
+
 
 const page = () => {
   return (
-    <main className='relative space-y-20 flex justify-center flex-col overflow-clip mx-auto sm:px-10 px-5 bg-white dark:bg-black'>
+    <main className=''>
       <div className='w-full'>
-        <Navbar/>
+        <Banner/>
       </div>
     </main>
   )
