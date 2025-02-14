@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "./provider"; 
+import WhatsAppButton from "@/components/Whataspp";
+import  Navbar from "@/components/Navbar"
 
 export const metadata: Metadata = {
   title: "Vow Divas | Enthuse the Beauty Within",
@@ -21,7 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+        <Navbar />
+        {children}</ThemeProvider>
+        <WhatsAppButton />
       </body>
     </html>
   );
